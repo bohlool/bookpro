@@ -1,0 +1,127 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_root"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/action_bar"
+        style="@style/TitleBar">
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/description_home"
+            android:src="@drawable/ic_title_home"
+            android:onClick="onHomeClick" />
+
+        <ImageView
+            style="@style/TitleBarSeparator" />
+
+        <TextView
+            style="@style/TitleBarText" />
+
+        <View
+            style="@style/TitleBarSpring" />
+
+        <ImageView
+            style="@style/TitleBarSeparator" />
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/description_search"
+            android:src="@drawable/ic_title_search"
+            android:onClick="onSearchClick" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="30dip">
+            <TextView
+                style="@style/TextBodyContent"
+                android:id="@+id/signup_tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_signup_username"></TextView>
+            <EditText
+                android:id="@+id/signup_et_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <TextView
+                style="@style/TextBodyContent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_tv_name"
+                android:layout_width="wrap_content"
+                android:text="@string/string_signup_name"></TextView>
+            <EditText
+                android:id="@+id/signup_et_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <TextView
+                style="@style/TextBodyContent"
+                android:id="@+id/signup_tv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_signup_password"></TextView>
+            <EditText
+                android:id="@+id/signup_et_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:singleLine="true" />
+            <TextView
+                style="@style/TextBodyContent"
+                android:id="@+id/signup_tv_repassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_signup_repassword"></TextView>
+            <EditText
+                android:id="@+id/signup_et_repassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:singleLine="true" />
+            <TextView
+                style="@style/TextBodyContent"
+                android:id="@+id/signup_tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_signup_email"></TextView>
+            <EditText
+                android:id="@+id/signup_et_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/signup_bt_create"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onCreateClick"
+                    android:text="@string/create" />
+                <Button
+                    android:id="@+id/signup_bt_cancel"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onCancelClick"
+                    android:text="@string/cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_root"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<LinearLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	   	android:id="@+id/action_bar"
+	   	style="@style/TitleBar">
+	    <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_home"
+            android:src="@drawable/ic_title_home"
+            android:onClick="onHomeClick" />
+            
+		<ImageView style="@style/TitleBarSeparator" />
+	    
+	    <TextView style="@style/TitleBarText" />
+	
+	    <View style="@style/TitleBarSpring" />
+	
+	    
+	
+	    <ImageView style="@style/TitleBarSeparator" />
+	    <ImageButton style="@style/TitleBarAction"
+	        android:contentDescription="@string/description_search"
+	        android:src="@drawable/ic_title_search"
+	        android:onClick="onSearchClick" />
+	</LinearLayout>
+	
+	<ScrollView 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent" >
+		<LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        
+			android:paddingTop="20dip"
+	        android:paddingLeft="100dip"
+	        android:paddingRight="100dip"
+	        android:paddingBottom="20dip">
+	        <TextView
+		        style="@style/TextBodyContent"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_horizontal"
+	            android:text="@string/singin_title"/> 
+			<EditText
+				android:id="@+id/username"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:hint="@string/username"/>
+			<EditText
+				android:id="@+id/password"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:password="true"
+				android:singleLine="true"
+				android:hint="@string/password"/>
+			<Button
+				android:id="@+id/login_button"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:onClick="onLoginClick"
+				android:text="@string/login"/>
+				
+			
+			<TextView
+		        style="@style/TextBodyContent"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_horizontal"
+	            android:paddingTop="10dp"
+	            android:text="@string/account_yet"/>
+	        <Button
+				android:id="@+id/signup_button"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:onClick="onSignupClick"
+				android:text="@string/signup"/>
+		</LinearLayout>
+		
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="64dip"
+    android:layout_width="fill_parent"
+    android:padding="6dip">
+    <TextView
+    	android:id="@+id/list2_textview2"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        
+        android:layout_below="@+id/list2_textview1"
+        android:layout_alignLeft="@id/list2_textview1"
+        android:layout_alignParentBottom="true"
+        
+        android:gravity="top"
+        android:singleLine="true"
+        android:textColor="@color/my_text_color"
+        android:text="Author"></TextView>
+	<TextView
+        android:id="@id/list2_textview1"
+        android:layout_marginLeft="6dip"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+
+		android:layout_toRightOf="@+id/list2_image"
+		
+		android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="bottom"
+        android:singleLine="true"
+        android:text="Book"></TextView>
+    <ImageView
+    	android:id="@id/list2_image"
+        
+        android:layout_width="56dip"
+        android:layout_height="56dip"
+        android:layout_gravity="center_vertical"
+        
+        android:src="@drawable/icon"></ImageView>
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">bookPro</string>
+    
+    <string name="description_logo">bookPro</string>
+    <string name="description_home">Home</string>
+    <string name="description_search">Search</string>
+    <string name="description_refresh">Refresh</string>
+    <string name="description_login">Login</string>
+    <string name="description_logout">Logout</string>
+    
+    <string name="btn_action">Action</string>
+    <string name="btn_library">Library</string>
+    <string name="btn_store">Store</string>
+    <string name="btn_about">About us</string>
+    <string name="btn_profile">My profile</string>
+    <string name="btn_search">Search</string>
+    <string name="btn_read">Last read</string>
+    
+    <string name="now_playing_loading">Loading...</string>
+    
+    <string name="title_signup">Signup</string>
+    <string name="title_login">Log in</string>
+    <string name="title_library">Library</string>
+    <string name="title_store">Store</string>
+    <string name="title_about">About Us</string>
+    <string name="title_profile">My Profile</string>
+    <string name="title_changeprofile">Change Profile</string>
+    <string name="title_search">Search</string>
+    <string name="title_read">Last Read</string>
+    <string name="title_book_detail">Detail</string>
+    <string name="title_list_book">Books</string>
+    <string name="title_list_subcategory">Subcatagory</string>
+    <string name="title_list_category">Category</string>
+    
+    <string name="singin_title">Sign in with your account</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Log in</string>
+    <string name="account_yet">Haven\'t got an account yet?</string>
+    <string name="signup">Sign up</string>
+    <string name="signup_title">Create account</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="re_password">Repeat password</string>
+    <string name="email">Email</string>
+    
+    <string-array name="search_type_array">        
+    	<item>Book</item>        
+    	<item>Author</item>
+    </string-array>
+    
+    <string name="title_error">Error</string>
+    <string name="error_format_username">Error: Your username is invalid.\n\nHints: Your username must be between 6 and 30 characters long; only letters (a-z, A-Z), numbers (0-9), characters (-, _) are allowed.\n\nExample: abc123</string>
+    <string name="error_empty_username">Error: Your username is empty.\n\nHints: Enter username and try again.</string>
+    <string name="error_empty_password">Error: Your password is empty.\n\nHints: Enter password and try again.</string>
+    <string name="error_password_not_match">Error: Two password is not match.</string>
+    <string name="error_format_email">Error: Your email is invalid.\n\nHints: Email address must start with \"_A-Za-z0-9-\" , optional follow by \".[_A-Za-z0-9-]\", and end with a \"\@\" symbol. The email\'s domain name must start with \"A-Za-z0-9\", follow by \".[A-Za-z0-9]\".\n\nExample: abc123@gmail.com</string>
+    <string name="error_username_password_incorrect">Error: Your username or password is incorrect.</string>
+    <string name="error_username_locked">Error: Your username is locked.\n\nHints: Please email us to supported.</string>
+    
+    <string name="error_server">Error: Server errors.\n\nHints: Please email us to supported.</string>
+    
+    <string name="error_signup_existed">Error: Your username existed.\n\nHints: Try another username.</string>
+    <string name="successful_signup">You can use that username to login.</string>
+    
+    <string name="about_soft_head">bookPro</string>
+    <string name="about_soft_content">Version: 1.0</string>
+    <string name="about_develop_head">Developed by:</string>
+    <string name="about_develop_content">Đinh Thị Thu Dung\nNguyễn Tuấn Dũng\nNguyễn Thị Hồng Hậu\nHà Văn Phương\nTạ Quang Quân</string>
+    <string name="about_support_head">Support:</string>
+    <string name="about_support_content">bookpro534@yahoo.com</string>
+    <string name="string_signup_username">Username:</string>
+    <string name="string_signup_password">Password:</string>
+    <string name="string_signup_repassword">Retype password:</string>
+    <string name="string_signup_email">Email:</string>
+    <string name="string_signup_name">Name:</string>
+    <string name="string_changeprofile_pass">New password:</string>
+    <string name="string_changeprofile_repass">Retype password:</string>
+    <string name="string_changeprofile_email">New email:</string>
+    <string name="string_changeprofile_address">New address</string>
+    <string name="string_changeprofile_name">New name:</string>
+    <string name="hello">Hello</string>
+</resources>

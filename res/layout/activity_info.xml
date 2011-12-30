@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/activity_info"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<LinearLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	   	android:id="@+id/action_bar"
+	   	style="@style/TitleBar">
+	    <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_home"
+            android:src="@drawable/ic_title_home"
+            android:onClick="onHomeClick" />
+            
+		<ImageView style="@style/TitleBarSeparator" />
+	    
+	    <TextView style="@style/TitleBarText" />
+	
+	    <View style="@style/TitleBarSpring" />
+	
+	    
+	
+	    <ImageView style="@style/TitleBarSeparator" />
+	    <ImageButton style="@style/TitleBarAction"
+	        android:contentDescription="@string/description_search"
+	        android:src="@drawable/ic_title_search"
+	        android:onClick="onSearchClick" />
+	</LinearLayout>
+	
+	<ScrollView 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent" >
+		<LinearLayout 
+			android:id="@+id/linearLayout1" 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+			<TextView
+		       	style="@style/TextBodyContent"
+		       	android:layout_width="fill_parent"
+		       	android:layout_height="wrap_content"
+		       	android:padding="6dp"
+		       	android:textStyle="bold"
+		        android:text="@string/about_soft_head"/>
+	        
+	        <TextView
+		       	style="@style/TextBodyContent"
+		       	android:layout_width="fill_parent"
+		       	android:layout_height="wrap_content"
+		       	android:padding="6dp"
+		        android:text="@string/about_soft_content"/>
+	  
+		    <TextView
+		       	style="@style/TextBodyContent"
+		       	android:layout_width="fill_parent"
+		       	android:layout_height="wrap_content"
+		       	android:padding="6dp"
+		       	android:textStyle="bold"
+		        android:text="@string/about_develop_head"/>
+		        
+		    <TextView
+		       	style="@style/TextBodyContent"
+		       	android:layout_width="fill_parent"
+		       	android:layout_height="wrap_content"
+		       	android:padding="6dp"
+		        android:text="@string/about_develop_content"/>
+		        
+		    <TextView
+		       	style="@style/TextBodyContent"
+		       	android:layout_width="fill_parent"
+		       	android:layout_height="wrap_content"
+		       	android:padding="6dp"
+		       	android:textStyle="bold"
+		        android:text="@string/about_support_head"/>
+		        
+			<TextView
+		       	style="@style/TextBodyContent"
+		       	android:layout_width="fill_parent"
+		       	android:layout_height="wrap_content"
+		       	android:id="@+id/about_support_content"
+		       	android:padding="6dp"
+		        android:text="about_support_content"/>	
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

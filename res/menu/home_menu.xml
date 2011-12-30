@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/personalize"
+          android:title="Personalize" >
+          <menu>
+          	<group android:checkableBehavior="single">
+          		<item android:id="@+id/change_theme_light"
+          			  android:title="Theme Light"/>
+          		<item android:id="@+id/change_theme_dark"
+          			  android:title="Theme Dark"/>
+          	</group>
+          </menu>
+	</item>
+</menu>

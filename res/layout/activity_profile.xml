@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_profile"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/action_bar"
+        style="@style/TitleBar">
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/description_home"
+            android:src="@drawable/ic_title_home"
+            android:onClick="onHomeClick" />
+        <ImageView
+            style="@style/TitleBarSeparator" />
+        <TextView
+            style="@style/TitleBarText" />
+        <View
+            style="@style/TitleBarSpring" />
+        <ImageView
+            style="@style/TitleBarSeparator" />
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/description_search"
+            android:src="@drawable/ic_title_search"
+            android:onClick="onSearchClick" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_loading"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center">
+        <ProgressBar
+            android:indeterminate="true"
+            android:layout_alignParentTop="true"
+            android:paddingRight="6dip"
+            android:id="@+id/profile_loading_progressbar"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"></ProgressBar>
+        <TextView
+            android:text="@string/now_playing_loading"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView1"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile_loading_progressbar"
+            android:layout_alignTop="@+id/profile_loading_progressbar"></TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/profile_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TableLayout
+            style="@style/Body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TableRow>
+                <TextView
+                    style="@style/TextBodyTitle"
+                    android:text="Username" />
+                <TextView
+                    style="@style/TextBodyContent"
+                    android:text=": " />
+                <TextView
+                    style="@style/TextBodyContent"
+                    android:id="@+id/profile_username"
+                    android:text="name" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/TextBodyTitle"
+                    android:text="Name" />
+                <TextView
+                    style="@style/TextBodyContent"
+                    android:text=": " />
+                <TextView
+                    style="@style/TextBodyContent"
+                    android:id="@+id/profile_name"
+                    android:text="name" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/TextBodyTitle"
+                    android:text="Email" />
+                <TextView
+                    style="@style/TextBodyContent"
+                    android:text=": " />
+                <TextView
+                    style="@style/TextBodyContent"
+                    android:id="@+id/profile_email"
+                    android:text="mail" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/TextBodyTitle"
+                    android:text="Address" />
+                <TextView
+                    style="@style/TextBodyContent"
+                    android:text=": " />
+                <TextView
+                    style="@style/TextBodyContent"
+                    android:id="@+id/profile_address"
+                    android:text="address" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/TextBodyTitle"
+                    android:text="Money" />
+                <TextView
+                    style="@style/TextBodyContent"
+                    android:text=": " />
+                <TextView
+                    style="@style/TextBodyContent"
+                    android:id="@+id/profile_money"
+                    android:text="money" />
+            </TableRow>
+        </TableLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/my_background">
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:clickable="false"
+                android:focusable="false"></Button>
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Change Profile"
+                android:onClick="onChangeProfileClick" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

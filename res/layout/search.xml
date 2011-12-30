@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/action_bar"
+        style="@style/TitleBar">
+        <EditText
+            android:id="@+id/seach_text"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:singleLine="true"
+            android:hint="Enter text here to search"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        style="@style/Body">
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:text="Search by:"
+            style="@style/TextBodyTitle"
+            android:layout_width="fill_parent"></TextView>
+        <RadioGroup
+            android:id="@+id/search_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                style="@style/TextBodyContent"
+                android:text="Name"
+                android:id="@+id/search_name"></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/search_author"
+                android:layout_height="wrap_content"
+                style="@style/TextBodyContent"
+                android:text="Author"></RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_background">
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:clickable="false"
+            android:focusable="false"></Button>
+        <Button
+            android:id="@+id/seach_ok"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dip"
+            android:text="Search"></Button>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.bookpro"
+      android:versionCode="1"
+      android:versionName="1.0">
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+        <activity android:theme="@style/Theme.BookStore"
+                  android:label="@string/app_name" android:name=".ui.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+        	android:theme="@style/Theme.BookStore"
+            android:label="@string/title_signup" 
+            android:name=".ui.SignupActivity"/>
+        
+        <activity android:theme="@style/Theme.BookStore"
+            android:label="@string/title_login" android:name=".ui.LoginActivity"/>
+            
+        <activity android:theme="@style/Theme.BookStore"
+            android:label="@string/title_library" android:name=".ui.LibraryActivity"/>
+            
+		<activity android:theme="@style/Theme.BookStore"
+            android:label="@string/title_about" android:name="ui.AboutActivity"/>
+            
+		<activity android:theme="@style/Theme.BookStore"
+            android:label="@string/title_profile" android:name=".ui.ProfileActivity"/>
+        
+        <activity android:theme="@style/Theme.BookStore"
+            android:label="@string/title_changeprofile" android:name=".ui.ChangeProfileActivity"/>
+            
+		<activity android:theme="@style/Theme.BookStore"
+            android:label="@string/title_search" android:name=".ui.SearchActivity"/>
+		
+		<activity android:theme="@style/Theme.BookStore"
+			android:label="@string/title_list_category"
+			android:name=".product.Main1"></activity>
+			
+		<activity android:theme="@style/Theme.BookStore"
+			android:label="@string/title_list_subcategory"
+			android:name=".product.Main2"></activity>
+		
+		<activity android:theme="@style/Theme.BookStore"
+			android:label="@string/title_list_book"
+			android:name=".product.Main3"></activity>
+		
+		<activity android:theme="@style/Theme.BookStore"
+			android:label="@string/title_book_detail"
+			android:name="product.Product_Detail"></activity>
+			
+		<activity android:theme="@style/Theme.BookStore"
+			android:label="@string/title_about"
+			android:name=".ui.AboutActivity"></activity>
+			
+		<activity android:theme="@style/Theme.BookStore"
+			android:label="@string/title_book_detail"
+			android:name=".product.Product_Detail"></activity>
+			
+		<activity android:theme="@style/Theme.BookStore"
+			android:label="@string/title_search"
+			android:name=".product.Search"></activity>
+			
+		<activity android:theme="@style/Theme.BookStore"
+			android:label="@string/title_search"
+			android:name=".product.ResultOfSearch"></activity>
+    </application>
+</manifest> 

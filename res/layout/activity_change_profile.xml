@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:id="@+id/activity_profile"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<LinearLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	   	android:id="@+id/action_bar"
+	   	style="@style/TitleBar">
+
+	    <ImageButton
+	        style="@style/TitleBarAction"
+	        android:contentDescription="@string/description_home"
+	        android:onClick="onHomeClick"
+	        android:src="@drawable/ic_title_home" />
+   
+		<ImageView style="@style/TitleBarSeparator" />
+	    <TextView style="@style/TitleBarText" />
+	    <View style="@style/TitleBarSpring" />
+	    <ImageView style="@style/TitleBarSeparator" />
+	    <ImageButton style="@style/TitleBarAction"
+	        android:contentDescription="@string/description_search"
+	        android:src="@drawable/ic_title_search"
+	        android:onClick="onSearchClick" />     
+	</LinearLayout>
+	
+	<ScrollView 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent" >
+		<LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="30dip">
+			<TextView 
+				style="@style/TextBodyContent"
+				android:layout_height="wrap_content" android:id="@+id/changeprofile_tv_name" android:layout_width="wrap_content" android:text="@string/string_changeprofile_name"></TextView>
+			<EditText 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:id="@+id/changeprofile_et_name"
+				android:singleLine="true"></EditText>
+			<TextView  
+				style="@style/TextBodyContent"
+				android:layout_height="wrap_content" android:text="@string/string_changeprofile_pass" android:layout_width="wrap_content" android:id="@+id/changeprofile_tv_pass"></TextView>
+			<EditText
+				android:id="@+id/change_profile_et_password"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:password="true"
+	            android:singleLine="true"/>
+			<TextView 
+				style="@style/TextBodyContent"
+				android:layout_height="wrap_content" android:id="@+id/changeprofile_tv_repass" android:layout_width="wrap_content" android:text="@string/string_changeprofile_repass"></TextView>
+			<EditText
+				android:id="@+id/change_profile_et_re_password"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:password="true"
+	            android:singleLine="true"/>
+			<TextView  
+				style="@style/TextBodyContent"
+				android:layout_height="wrap_content" android:id="@+id/changeprofile_tv_email" android:layout_width="wrap_content" android:text="@string/string_changeprofile_email"></TextView>
+			<EditText
+				android:id="@+id/change_profile_et_email"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+	            android:singleLine="true"/>
+			<TextView  
+				style="@style/TextBodyContent"
+				android:layout_height="wrap_content" android:id="@+id/changeprofile_tv_address" android:layout_width="wrap_content" android:text="@string/string_changeprofile_address"></TextView>
+			<EditText
+				android:id="@+id/change_profile_et_address"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+	            android:singleLine="true"/>	
+			<LinearLayout
+				android:orientation="horizontal"
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="wrap_content"
+	        	android:layout_weight="1">
+				<Button
+					android:id="@+id/change_profile_bt_save"
+					android:layout_width="0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:onClick="onSaveChangeClick"
+					android:text="Save"/>
+		        <Button
+					android:id="@+id/change_profile_bt_cancel"
+					android:layout_width="0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:onClick="onCancelClick"
+					android:text="Cancel"/>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

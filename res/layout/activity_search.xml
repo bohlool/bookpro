@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:id="@+id/activity_search"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<LinearLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	   	android:id="@+id/action_bar"
+	   	style="@style/SearchBar">
+	    <Spinner         
+	    	android:id="@+id/search_spinner"        
+	    	android:layout_width="wrap_content"        
+	    	android:layout_height="wrap_content"/>
+		<EditText
+			android:id="@+id/search_tv_search"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+            android:singleLine="true"
+            android:hint="Search by name"/>
+		<ImageButton
+			android:id="@+id/search_bt_search"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:src="@drawable/ic_title_search"
+			android:onClick="onSearchClick"/>
+	</LinearLayout>
+	
+	<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:background="@color/my_background"
+            android:text="Page 0/0: 0 item(s)"
+            android:id="@+id/result_page"></TextView>
+    
+    <RelativeLayout
+   	 	android:layout_width="fill_parent" 
+   	 	android:layout_height="fill_parent">
+   	 	<LinearLayout
+			android:orientation="horizontal"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@color/my_background"
+        	android:layout_alignParentBottom="true"
+        	android:id="@+id/main2_2buttons">
+			<Button
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="Back"
+	            android:enabled="false"
+	            android:layout_weight="1"
+	            android:id="@+id/result_back"></Button>
+	        <Button
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"     
+	            android:text="Next"
+	       		android:enabled="false"
+	       		android:layout_weight="1"
+	            android:id="@+id/result_more"></Button>
+		</LinearLayout>    
+		<ListView
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:id="@+id/result_listview"
+	        android:layout_alignParentTop="true" 
+	        android:layout_above="@id/main2_2buttons"></ListView>
+	</RelativeLayout>
+</LinearLayout>
