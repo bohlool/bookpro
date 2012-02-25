@@ -1,6 +1,7 @@
 DESCRIPTION
 -----------
 Android client for bookstore.
+
 MEMBERS
 -------
 - Dinh Thi Thu Dung
@@ -8,6 +9,7 @@ MEMBERS
 - Nguyen Thi Hong Hau
 - Ha Van Phuong
 - Ta Quang Quan
+
 REQUIREMENTS
 ------------
 Android 2.3.3+
